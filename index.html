@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Outfit', sans-serif; transition: 0.2s linear;}
+
+    body {background-color: hsl(217, 54%, 11%);min-height: 100vh; min-width: 100vw; display: flex; align-items: center;}
+
+    .hero-img {position: relative; margin-bottom: 24px;}
+    .hero-img:hover div {opacity: 1;}
+    .hero-img img {max-width: 100%;}
+    .hero-img > * {border-radius: 12px;}
+    .hero-img div { opacity: 0; cursor: pointer; display: flex;justify-content: center; align-items: center; background-color: hsla(178, 100%, 50%, 0.5); position: absolute; top: 0; left: 0; bottom: 3px; right: 0;}
+
+    h2 { color: white; font-size: 28px; cursor: pointer;}
+    h2:hover {color: hsl(178, 100%, 50%); }
+
+    p { color: hsl(215, 51%, 70%); line-height: 24px; font-size: 18px; letter-spacing: 0.4px; padding: 16px 0; }
+
+    .container { width: 375px;margin: 0 auto; display: flex; align-items: center; padding: 24px; background-color: hsl(216, 50%, 16%); border-radius: 20px; box-shadow: 0px 20px 0px 20px hsl(217, 50%, 10%);}
+
+    .time {display: flex; justify-content: space-between; border-bottom: 1.5px solid hsl(215, 32%, 27%); padding-bottom: 10px }
+
+    .time span { font-size: 20px; line-height: 18px; }
+    .time div img { padding-right: 6px; }
+    .time div:nth-child(1) span{color: hsl(178, 100%, 50%);}
+    .time div:nth-child(2) span{color: hsl(215, 51%, 70%);}
+
+    .copyright { display: flex; height: 40px; margin: 12px 0; align-items: center; font-size: 14px; margin: 20px auto;}
+    .copyright img {width: 50px; height: 50px; border-radius: 50%; border: 1px solid white; margin-right: 12px;}
+    .copyright a { text-decoration: none; color: white; }
+    .copyright a:hover { color: hsl(178, 100%, 50%); }
+
+    .attribution { font-size: 12px; text-align: center; max-width: 100%; position: absolute; bottom: 20px; right: 50%; transform: translateX(50%);}
+    .attribution a { color: hsl(228, 45%, 44%); text-transform: capitalize; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div>
+        <div class="hero-img">
+          <img src="images/image-equilibrium.jpg" alt=""/>
+          <div><img src="images/icon-view.svg" alt=""/></div>
+        </div>
+
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+
+      <div class="time">
+        <div><img src="images/icon-ethereum.svg"/><span> 0.041 ETH</span></div>
+        <div><img src="images/icon-clock.svg"/><span>3 days left</span></div>
+      </div>
+      
+      <div class="copyright">
+        <img src="images/image-avatar.png"/>
+        <p>Creation of <a href="#">Jules Wyvern</a></p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kawsar012">kawsar ahmed</a>.
+  </div>
+
+</body>
+</html>
